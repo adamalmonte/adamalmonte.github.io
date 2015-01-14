@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Adam Almonte :: Developer :: New York City</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="header">
+      <p class="header-text"><span>ADAM ALMONTE</span></p>
+
+      <div class="chevron">
+        <p><a href="#main-section"><i class="fa fa-chevron-down fa-3x"></i></a></p>
+      </div>
+    </div>
+
+
+    <div id="main-section">
+    <!--
+      <div id="hold-navbar">
+        <nav id="nav" class="navbar navbar-custom navbar-fixed-top" role="navigation">
+          <div class="container">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Top</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      -->
+      
+      <div id="projects" class="col-md-12">
+        <h2 class="category col-sm-4">PROJECTS</h2>
+        <p class="col-sm-8">Some samples of my coding work can be found on my Github profile <a href="https://github.com/adamalmonte">@adamalmonte</a>.</p>
+      </div>
+
+      <div id="contact" class="col-md-12">
+        <h2 class="category col-sm-4">CONTACT</h2>
+        <p class="col-sm-8">For inquiries, opportunities, or to request a full résumé, contact me on <a href="http://www.linkedin.com/in/adamalmonte/">LinkedIn</a>, or send me an e-mail at aalmont4 at binghamton dot edu.</p>
+      </div>
+
+      <div id="about" class="col-md-12">
+        <h2 class="category col-sm-4">ABOUT</h2>
+        <p class="col-sm-8">I am a programmer and web developer from New York City. I am currently a Senior majoring in Computer Science at Binghamton University in Vestal, New York. Outside of programming, my interests include video editing and cooking.</p>
+      </div>
+
+      <div id="footer" class="col-xs-12">
+        <h5>Adam Almonte 2015</h5>
+      </div>
+
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+
+    <script>
+    /*http://stackoverflow.com/questions/12070970/how-to-use-the-new-affix-plugin-in-twitters-bootstrap-2-1-0/13151016#13151016*/
+    /*
+      $(function() {
+        $('#hold-navbar').height($("#nav").height());
+
+        $('#nav').affix({
+          offset: { top: $('#nav').offset().top }
+        });
+      });
+    */
+      $(document).ready(function(){
+        $('a[href^="#"]').on('click',function (e) {
+            e.preventDefault();
+
+            var target = this.hash;
+            var $target = $(target);
+
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top
+            }, 900, 'swing');
+        });
+      });
+    </script>
+
+  </body>
+</html>
