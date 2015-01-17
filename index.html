@@ -28,58 +28,91 @@
 
 
     <div id="main-section">
-    <!--
-      <div id="hold-navbar">
-        <nav id="nav" class="navbar navbar-custom navbar-fixed-top" role="navigation">
-          <div class="container">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Top</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#contact">Contact</a></li>
-            </ul>
+      <div class="container-fluid">
+
+        <div class="row">
+          <div id="projects" class="col-md-12">
+            <h2 class="category col-sm-4">PROJECTS</h2>
+            <p class="col-sm-8">In addition to the project(s) listed below, some samples of my coding work can be found on my Github profile <a href="https://github.com/adamalmonte" target="_blank">@adamalmonte</a>.</p>
+            <br>
+
+            <!-- project pop-downs -->
+            <div class="row">
+              <div class="col-sm-8 col-sm-offset-4">
+
+                <a href="#pz" data-toggle="collapse">Broome County Promise Zone Website</a>
+                  <div class="collapse" id="pz">
+                    <p>The homepage for a non-profit organization working towards improving the educational opportunities in Broome County, located in New York State's Southern Tier.</p>
+                    
+                    <div class= "row">
+                      <div class="col-xs-3">
+                        <a href="img/pz01.png" class="thumbnail" target="_blank">
+                          <img src="img/pz01.png">
+                        </a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="img/pz02.png" class="thumbnail" target="_blank">
+                          <img src="img/pz02.png">
+                        </a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="img/pz03.png" class="thumbnail" target="_blank">
+                          <img src="img/pz03.png">
+                        </a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="img/pz04.png" class="thumbnail" target="_blank">
+                          <img src="img/pz04.png">
+                        </a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="img/pz05.png" class="thumbnail" target="_blank">
+                          <img src="img/pz05.png">
+                        </a>
+                      </div>
+                      <div class="col-xs-3">
+                        <a href="img/pz06.png" class="thumbnail" target="_blank">
+                          <img src="img/pz06.png">
+                        </a>
+                      </div>
+                    </div>
+                    
+                  </div> <!-- PZ div-->
+
+              </div>
+            </div> <!-- row -->
+
+
           </div>
-        </nav>
-      </div>
-      -->
-      
-      <div id="projects" class="col-md-12">
-        <h2 class="category col-sm-4">PROJECTS</h2>
-        <p class="col-sm-8">Some samples of my coding work can be found on my Github profile <a href="https://github.com/adamalmonte" target="_blank">@adamalmonte</a>.</p>
+        </div>
+
+        <div class="row">
+          <div id="contact" class="col-md-12">
+            <h2 class="category col-sm-4">CONTACT</h2>
+            <p class="col-sm-8">For inquiries, opportunities, or to request a full résumé, contact me on <a href="http://www.linkedin.com/in/adamalmonte/" target="_blank">LinkedIn</a>, or send me an e-mail at adamgalmonte at gmail dot com.</p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div id="about" class="col-md-12">
+            <h2 class="category col-sm-4">ABOUT</h2>
+            <p class="col-sm-8">I am a programmer and web developer from New York City. I am currently a Senior majoring in Computer Science at Binghamton University in Vestal, New York. Outside of programming, my interests include video editing and cooking.</p>
+          </div>
+        </div>
       </div>
 
-      <div id="contact" class="col-md-12">
-        <h2 class="category col-sm-4">CONTACT</h2>
-        <p class="col-sm-8">For inquiries, opportunities, or to request a full résumé, contact me on <a href="http://www.linkedin.com/in/adamalmonte/" target="_blank">LinkedIn</a>, or send me an e-mail at adamgalmonte at gmail dot com.</p>
-      </div>
 
-      <div id="about" class="col-md-12">
-        <h2 class="category col-sm-4">ABOUT</h2>
-        <p class="col-sm-8">I am a programmer and web developer from New York City. I am currently a Senior majoring in Computer Science at Binghamton University in Vestal, New York. Outside of programming, my interests include video editing and cooking.</p>
-      </div>
-
-      <!--
       <div id="footer" class="col-xs-12">
-        <h5>Adam Almonte 2015</h5>
+        <h5>Adam Almonte, 2015.</h5>
       </div>
-      -->
+
 
     </div>
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-
     <script>
-    /*http://stackoverflow.com/questions/12070970/how-to-use-the-new-affix-plugin-in-twitters-bootstrap-2-1-0/13151016#13151016*/
-    /*
-      $(function() {
-        $('#hold-navbar').height($("#nav").height());
-
-        $('#nav').affix({
-          offset: { top: $('#nav').offset().top }
-        });
-      });
-    */
       $(document).ready(function(){
         $('a[href^="#"]').on('click',function (e) {
             e.preventDefault();
@@ -91,6 +124,7 @@
                 'scrollTop': $target.offset().top
             }, 900, 'swing');
         });
+
       });
     </script>
 
