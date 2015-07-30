@@ -150,11 +150,6 @@ a:focus{
 	}
 }
 
-a.thumbnail:hover,
-a.thumbnail:focus,
-a.thumbnail.active {
-  border-color: #000;
-}
 
 #about{
 	text-align: center;
@@ -185,4 +180,8 @@ a.thumbnail.active {
 
 #pz{
 	text-align: center;
+}
+
+.row{
+	margin-bottom: 5px;
 }
