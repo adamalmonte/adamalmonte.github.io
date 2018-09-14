@@ -4,118 +4,61 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Adam Almonte :: Developer :: New York City</title>
+    <title>Adam Almonte - Software Engineer and Web Developer</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+
     <link href="css/styles.css" rel="stylesheet">
-    <link href="css/zoom.css" rel="stylesheet">
-
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
+    <div class="spacer">
 
-    <div class="header">
-      <p class="header-text"><span>ADAM ALMONTE</span></p>
+        <section class="header-container">
+            <p class="header-text">ADAM ALMONTE</p>
+        </section>
 
-      <div class="chevron">
-        <p><a href="#main-section"><i class="fa fa-chevron-down fa-3x"></i></a></p>
-      </div>
+        <section class="main-section">
+            <div class="main-section__bio">
+                <p>Adam Almonte is a Software Engineer, Web Developer and Computer Scientist based out of New York City. </p>
+
+                <p>Adam graduated from Binghamton University in 2015 with a Bachelor's of Science in Computer Science. He is currently employed as a Software Engineer at <a href="https://www.rubensteintech.com/">Rubenstein Technology Group</a>, building innovative solutions for a myriad of illustrious clients.</p>
+
+                <p>When not using keyboards to make magic, he likes to play video games, find a new show to binge, find the cheapest possible happy hour, lift, and enjoy new experiences with his friends.</p>
+            </div>
+
+            <div class="main-section__selected-work">
+                <p class="small-heading">SELECTED WORK <span class="small-subheading"><i>(Reverse Chronological Order)</i></span></p>
+
+                <ul class="list">
+                    <li><a href="https://www.akingump.com/en/">Akin Gump Strauss Hauer &amp; Feld LLP</a></li>
+                    <li><a href="https://www.steptoe.com/en/">Steptoe &amp; Johnson LLP</a></li>
+                    <li><a href="https://www.milbank.com/en/">Milbank, Tweed, Hadley &amp; McCloy LLP</a></li>
+                    <li><a href="https://www.srz.com/">Schulte Roth & Zabel LLP</a></li>
+                    <li><a href="https://www.fsb-tcfd.org/">Task Force on Climate-related Financial Disclosures</a></li>
+                    <li><a href="http://www.usshipcorp.com/">U.S. Shipping</a></li>
+                </ul>                
+            </div>
+
+             <div class="main-section__contact">
+                <p class="small-heading">CONTACT</p>
+
+                <p>To request a full résumé, please contact me via email or LinkedIn.</p>
+
+                <ul class="list">
+                    <li><a href="https://www.linkedin.com/in/adamalmonte">LinkedIn</a></li>
+                    <li><a href="mailto:adamgalmonte@gmail.com">Email</a></li>
+                </ul>                
+            </div>           
+        </section>
+
+        <section class="footer-container">
+            <p class="footer-text">&copy; <span class="js-year"></span> Adam Almonte, All Rights Reserved.</p>
+        </section>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+        <script src="js/scripts.js"></script>
     </div>
-
-
-    <div id="main-section">
-      <div class="container-fluid">
-
-        <div class="row">
-          <div id="projects" class="col-md-12">
-
-            <h2 class="category col-sm-4">PORTFOLIO</h2>
-            <p class="col-sm-8">A sample of some projects I have worked on.</p>
-
-            <!-- project pop-downs -->
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-4">
-
-                <a href="#pz" data-toggle="collapse">Broome County Promise Zone Website <i class="fa fa-chevron-down"></i></a>
-                <div class="collapse" id="pz">
-                  <p>The homepage for a <a href="https://www.facebook.com/pages/Broome-County-Promise-Zone/562354943890394">non-profit organization</a> working towards improving the educational opportunities in Broome County, located in New York State's Southern Tier.</p>
-                  
-                  <div class= "row">
-                    <div class="col-xs-3">
-                      <img src="img/pz01.png" class="thumbnail" data-action="zoom">
-                    </div>
-
-                    <div class="col-xs-3">
-                      <img src="img/pz02.png" class="thumbnail" data-action="zoom">
-                    </div>
-
-                    <div class="col-xs-3">
-                      <img src="img/pz03.png" class="thumbnail" data-action="zoom">
-                    </div>
-
-                    <div class="col-xs-3">
-                      <img src="img/pz04.png" class="thumbnail" data-action="zoom">
-                    </div>
-
-                    <div class="col-xs-3">
-                      <img src="img/pz05.png" class="thumbnail" data-action="zoom">
-                    </div>
-
-                    <div class="col-xs-3">
-                      <img src="img/pz06.png" class="thumbnail" data-action="zoom">
-                    </div>
-                  </div>
-                  
-                </div> <!-- PZ div-->
-              </div><!-- column -->
-            </div> <!-- row -->
-
-            <div class="row">
-              <div class="col-sm-8 col-sm-offset-4">
-
-                <a href="#quickbs" data-toggle="collapse">Quick Bootstrap (quickbs) <i class="fa fa-chevron-down"></i></a>
-                <div class="collapse" id="quickbs">
-                  <p>A command line tool built in Node.js to quickly generate a basic boilerplate for a Bootstrap-powered page.</p>
-                  <p><a href="https://github.com/adamalmonte/quickbs" target="_blank"><i class="fa fa-github fa-3x"></i></a></p>
-                </div><!-- quickbs div-->
-
-              </div><!-- column -->
-            </div><!-- row -->
-
-
-          </div> <!-- #projects -->
-        </div> <!-- row -->
-
-        <div class="row">
-          <div id="contact" class="col-md-12">
-            <h2 class="category col-sm-4">CONTACT</h2>
-            <p class="col-sm-8">For inquiries, opportunities, or to request a full résumé, contact me on <a href="http://www.linkedin.com/in/adamalmonte/" target="_blank">LinkedIn</a>, or send me an e-mail at adamgalmonte at gmail dot com.</p>
-          </div>
-        </div>
-
-        <div class="row">
-          <div id="about" class="col-md-12">
-            <h2 class="category col-sm-4">ABOUT</h2>
-            <p class="col-sm-8">I am a programmer and web developer from New York City. I graduated from Binghamton University in Vestal, New York with a Bachelors of Science in Computer Science in May 2015. As a programmer, my education is never over and I welcome any and all opportunities that will allow me to learn and grow.</p>
-          </div>
-        </div>
-      </div>
-
-
-      <div id="footer" class="col-xs-12">
-        <h5>Adam Almonte, 2015.</h5>
-      </div>
-    </div>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-    <script src="js/zoom.js"></script>
-
   </body>
 </html>
