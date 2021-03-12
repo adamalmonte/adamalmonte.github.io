@@ -1,2 +1,14 @@
-#this crap
 *.DS_Store
+node_modules/
+
+# next.js build output
+.next
+
+# dotenv environment variables file
+.env
+.env.build
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
