@@ -4,10 +4,13 @@ import Footer from '../components/Footer';
 import styled, { createGlobalStyle } from 'styled-components';
 import { colors } from '../helpers/Theme';
 
+import '../styles/normalize.css';
+
 const GlobalStyles = createGlobalStyle`
   body {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;
     background-color: ${colors.lightGrey};
+    padding: 20px;
   }
 `;
 
@@ -16,8 +19,7 @@ const App = ({ Component, pageProps }) => {
     <>
       <Head>
         <style>
-          {/* "Please do not use @import CSS syntax in createGlobalStyle at this time, as the CSSOM APIs we use in production do not handle it well" */}
-          @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+          @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Righteous&display=swap');
         </style>
       </Head>
       <GlobalStyles />
